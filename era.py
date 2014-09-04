@@ -7,7 +7,7 @@ from calendar import calendar;
 from calendar import isleap as c_isleap;
 
 
-__all__ = ['now', 'year'];
+__all__ = ['now', 'firstday', 'lastday', 'year', 'week', 'weekday', 'day_name'];
 
 
 CUR_YEAR = datetime.now().year;
@@ -20,6 +20,7 @@ newyear = (9,3); # 新年是特殊的日期和闰年的2月29日的星期是星�
 leapday = (2,29);
 holidays = {(9,3):"新年",(1,1):"元旦"};
 
+day_name = {0:"周一",1:"周二",2:"周三",3:"周四",4:"周五",5:"周六",6:"周日"}
 
 def now():
     return 'now';
